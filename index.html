@@ -22,6 +22,8 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 header .logo{height:52px}
 nav{display:flex;gap:28px;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
 nav a{color:var(--muted);transition:color .2s}nav a:hover{color:var(--accent-ink)}
+.admin-login{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border:1px solid var(--accent);color:var(--accent-ink);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}.admin-login:hover{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+@media(max-width:640px){header .wrap{height:64px}.admin-login{padding:9px 12px;font-size:9px}}
 @media(max-width:640px){nav{display:none}}
 .deco{position:absolute;color:var(--accent);opacity:.45;pointer-events:none;z-index:0}
 .deco svg{width:100%;height:auto;display:block;fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
@@ -123,6 +125,7 @@ footer a:hover{color:var(--accent-ink)}
 <header><div class="wrap">
   <span></span>
   <nav><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#menu-ar">Menú AR</a><a href="#clientes">Clientes</a><a href="#contacto">Contacto</a></nav>
+  <a class="admin-login" href="https://admin.factorumami.com.ar/" aria-label="Ingresar al panel de administración">Administración ↗</a>
 </div></header>
 
 <main>
